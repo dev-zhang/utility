@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  utility
+//
+//  Created by ZhangYu on 2018/2/28.
+//  Copyright © 2018年 lcsd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//公共头文件
+
+//屏幕尺寸
+/** 屏幕宽度 */
+#define ZYScreenWidth [UIScreen mainScreen].bounds.size.width
+/** 屏幕高度 */
+#define ZYScreenHeight [UIScreen mainScreen].bounds.size.height
+
+/** RGB颜色,不透明 */
+#define ZYRGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+/** 日志输出 */
+#ifdef DEBUG    //测试状态，开启输出
+#define ZYLog(...) NSLog(__VA_ARGS__)
+#else   //发布状态，关闭输出
+#define ZYLog(...)
+#endif
+
+/** 打印执行的方法 */
+#define ZYLogFunc ZYLog(@"%d行, %s", __LINE__, __func__);
+
+
+#endif /* PrefixHeader_pch */
