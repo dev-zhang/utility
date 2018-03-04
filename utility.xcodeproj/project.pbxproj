@@ -13,6 +13,7 @@
 		2A14DF862046962500D52791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A14DF852046962500D52791 /* Assets.xcassets */; };
 		2A14DF892046962500D52791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A14DF872046962500D52791 /* LaunchScreen.storyboard */; };
 		2A14DF8C2046962500D52791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14DF8B2046962500D52791 /* main.m */; };
+		2A4A862F204C0B04008A32EF /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4A862E204C0B04008A32EF /* UIImage+Color.m */; };
 		2A51401C2049554E004099BF /* 8366FD42-ADC3-481F-96E8-4DA83F99B9A0.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 2A51400D2049554E004099BF /* 8366FD42-ADC3-481F-96E8-4DA83F99B9A0.codesnippet */; };
 		2A51401D2049554E004099BF /* 27851FB8-CA1D-498C-851D-C62AB6BBFBB1.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 2A51400E2049554E004099BF /* 27851FB8-CA1D-498C-851D-C62AB6BBFBB1.codesnippet */; };
 		2A51401E2049554E004099BF /* 230DD5D6-F974-4848-B4A8-890A9B911636.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 2A51400F2049554E004099BF /* 230DD5D6-F974-4848-B4A8-890A9B911636.codesnippet */; };
@@ -42,6 +43,8 @@
 		2A14DF8A2046962500D52791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A14DF8B2046962500D52791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A14DF922046964900D52791 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2A4A862D204C0B04008A32EF /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		2A4A862E204C0B04008A32EF /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		2A51400D2049554E004099BF /* 8366FD42-ADC3-481F-96E8-4DA83F99B9A0.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "8366FD42-ADC3-481F-96E8-4DA83F99B9A0.codesnippet"; sourceTree = "<group>"; };
 		2A51400E2049554E004099BF /* 27851FB8-CA1D-498C-851D-C62AB6BBFBB1.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "27851FB8-CA1D-498C-851D-C62AB6BBFBB1.codesnippet"; sourceTree = "<group>"; };
 		2A51400F2049554E004099BF /* 230DD5D6-F974-4848-B4A8-890A9B911636.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "230DD5D6-F974-4848-B4A8-890A9B911636.codesnippet"; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 		2A14DF7B2046962500D52791 /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				2A4A862C204C0AA2008A32EF /* Category */,
 				2A51400B2049550A004099BF /* Resource */,
 				2A14DF7C2046962500D52791 /* AppDelegate.h */,
 				2A14DF7D2046962500D52791 /* AppDelegate.m */,
@@ -102,6 +106,15 @@
 				2A14DF922046964900D52791 /* PrefixHeader.pch */,
 			);
 			path = utility;
+			sourceTree = "<group>";
+		};
+		2A4A862C204C0AA2008A32EF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2A4A862D204C0B04008A32EF /* UIImage+Color.h */,
+				2A4A862E204C0B04008A32EF /* UIImage+Color.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		2A51400B2049550A004099BF /* Resource */ = {
@@ -221,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A14DF812046962500D52791 /* ViewController.m in Sources */,
+				2A4A862F204C0B04008A32EF /* UIImage+Color.m in Sources */,
 				2A14DF8C2046962500D52791 /* main.m in Sources */,
 				2A14DF7E2046962500D52791 /* AppDelegate.m in Sources */,
 			);
@@ -358,6 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VS8R97RDUZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/utility/PrefixHeader.pch";
 				INFOPLIST_FILE = utility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lcsd.utility;
@@ -372,6 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VS8R97RDUZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/utility/PrefixHeader.pch";
 				INFOPLIST_FILE = utility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lcsd.utility;
