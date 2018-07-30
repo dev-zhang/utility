@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0FF2A4210EE968003AC657 /* UIView+ZYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FF2A3210EE968003AC657 /* UIView+ZYFrame.m */; };
+		2A0FF2A7210EF34C003AC657 /* UIView+ZYFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FF2A6210EF34C003AC657 /* UIView+ZYFactory.m */; };
 		2A14DF7E2046962500D52791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14DF7D2046962500D52791 /* AppDelegate.m */; };
 		2A14DF812046962500D52791 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A14DF802046962500D52791 /* ViewController.m */; };
 		2A14DF842046962500D52791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A14DF822046962500D52791 /* Main.storyboard */; };
@@ -32,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A0FF2A2210EE968003AC657 /* UIView+ZYFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYFrame.h"; sourceTree = "<group>"; };
+		2A0FF2A3210EE968003AC657 /* UIView+ZYFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYFrame.m"; sourceTree = "<group>"; };
+		2A0FF2A5210EF34C003AC657 /* UIView+ZYFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYFactory.h"; sourceTree = "<group>"; };
+		2A0FF2A6210EF34C003AC657 /* UIView+ZYFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYFactory.m"; sourceTree = "<group>"; };
 		2A14DF792046962500D52791 /* utility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = utility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A14DF7C2046962500D52791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A14DF7D2046962500D52791 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +119,10 @@
 			children = (
 				2A4A862D204C0B04008A32EF /* UIImage+Color.h */,
 				2A4A862E204C0B04008A32EF /* UIImage+Color.m */,
+				2A0FF2A2210EE968003AC657 /* UIView+ZYFrame.h */,
+				2A0FF2A3210EE968003AC657 /* UIView+ZYFrame.m */,
+				2A0FF2A5210EF34C003AC657 /* UIView+ZYFactory.h */,
+				2A0FF2A6210EF34C003AC657 /* UIView+ZYFactory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -173,7 +183,7 @@
 		2A14DF712046962500D52791 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = lcsd;
 				TargetAttributes = {
 					2A14DF782046962500D52791 = {
@@ -233,10 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0FF2A7210EF34C003AC657 /* UIView+ZYFactory.m in Sources */,
 				2A14DF812046962500D52791 /* ViewController.m in Sources */,
 				2A4A862F204C0B04008A32EF /* UIImage+Color.m in Sources */,
 				2A14DF8C2046962500D52791 /* main.m in Sources */,
 				2A14DF7E2046962500D52791 /* AppDelegate.m in Sources */,
+				2A0FF2A4210EE968003AC657 /* UIView+ZYFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +288,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -283,6 +296,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -331,6 +345,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -338,6 +353,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
