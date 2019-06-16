@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>/** &lt;#注释#&gt; */
-static const &lt;#type#&gt;  &lt;#name#&gt; = &lt;#value#&gt;;</string>
+static const &lt;#type#&gt; &lt;#name#&gt; = &lt;#value#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>12A1F1FE-69F5-4DAF-8876-9423202A1B0B</string>
 	<key>IDECodeSnippetLanguage</key>
